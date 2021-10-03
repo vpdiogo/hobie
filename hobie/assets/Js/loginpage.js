@@ -30,36 +30,48 @@ const bullets = document.querySelectorAll(".bullets span");
 
 const images = document.querySelectorAll(".image"); 
 
-function moveSlider() {
-    let index = this.dataset.value;
+// function moveSlider() {
+//     let index = this.dataset.value;
     
-    let currentImage = document.querySelector(`.img-${index}`);
+//     let currentImage = document.querySelector(`.img-${index}`);
     
-    images.forEach(img => img.classList.remove("show"));
-    currentImage.classList.add("show");
+//     images.forEach(img => img.classList.remove("active"));
+//     currentImage.classList.add("active");
 
-    const textSlider = document.querySelector(".text-group");
-    textSlider.style.transform = `translateY(${-(index - 1) * 3.52}rem)`;
+//     const textSlider = document.querySelector(".text-group");
+//     textSlider.style.transform = `translateY(${-(index - 1) * 3.52}rem)`;
 
-    bullets.forEach(bull => bull.classList.remove("active"));
-    this.classList.add("active");
-}
+//     bullets.forEach(bull => bull.classList.remove("active"));
+//     this.classList.add("active");
+// }
 
-bullets.forEach(n => {
-    n.addEventListener("click", moveSlider);
-});
+// bullets.forEach(n => {
+//     n.addEventListener("click", moveSlider);
+// });
 
 // ==================== CAROUSEL SLIDER AUTO ====================
 var repeat = function (activeClass){
+
     let active = document.getElementsByClassName("active");
+
+    const textSlider = document.querySelectorAll(".text-group h2");
+
+    
     let i = 1;
 
+
     var repeater = () => {
+        
         setTimeout(function() {
-          
-            
-        images[i].classList.add("show");
+          [...active].forEach((activeSlide) =>{
+              activeSlide.classList.remove("active");
+
+        });
+        
+        
+        images[i].classList.add("active");
         bullets[i].classList.add("active");
+        textSlider[i].classList.add("active");
         i++
 
         if(images.length == i){
@@ -68,7 +80,7 @@ var repeat = function (activeClass){
             return;
         }
         repeater();
-        }, 2000);
+        }, 4000);
     }
     repeater();
 }

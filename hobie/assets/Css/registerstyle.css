@@ -338,7 +338,7 @@ main.sign-up-mode .carousel {
   transition: opacity 1s, transform 1s;
 }
 
-.image.show {
+.image.active {
   opacity: 1;
   transform: none;
 }
@@ -360,8 +360,6 @@ main.sign-up-mode .carousel {
   display: flex;
   flex-direction: column;
   text-align: center;
-  transform: translateY(0);
-  transition: 1s;
 }
 
 .text-group h2:nth-child(2) {
@@ -373,6 +371,15 @@ main.sign-up-mode .carousel {
   font-weight: var(--semi-bold);
   font-size: 2.2rem;
   text-transform: capitalize;
+  display: none;
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+}
+
+.text-group h2.active {
+  display: block;
+  transform: none;
+  opacity: 1;
 }
 
 .bullets {
