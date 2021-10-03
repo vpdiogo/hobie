@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/hobielogo-icon.png">
+
+    <!-- ========== LINK CSS ===========  -->
+
+    <link rel="stylesheet" href="./assets/Css/registerstyle.css">
+    
+    <!-- =========== LINK REMIX ICON ============  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    
+    <title>Hobie - Art's Gallery</title>
+</head>
+<body>
+
+<main>
+    <!-- =============== LAYOUT ================  -->
+<div class="box">
+    <div class="inner-box">
+        
+        <div class="forms-wrap">
+            
+    <!-- ============================= SIGN IN SECTION ============================    -->
+            
+            <form action="register.html" autocomplete="off"class="sign-in">
+                
+                <div class="logo__content">
+                    <img src="./assets/images/hobielogo-icon.png" alt="" class="img-logo">
+                    <h4 class="logo-text">
+                        Hobie
+                    </h4>
+                </div> <!--======== LOGO ENDS =========-->
+
+                <div class="heading">
+                    <h2>Welcome Again !</h2>
+                    <h6>You're not register yet?</h6>
+                    <a href="#" class="reg">Sign up</a>
+                </div> <!--============= HEADING ENDS ================-->
+                
+                <div class="actual-form">
+                    <div class="input-wrap">
+                        <input type="text"
+                        minlength="4" 
+                        class="input-field"
+                        autocomplete="off"
+                        required
+                        id="email"
+                        />
+                        <label for="email">E-mail or Username</label>
+                    </div> <!--=========== Email ==============-->
+
+                    <div class="input-wrap">
+                        <input type="password"
+                        minlength="4" 
+                        class="input-field"
+                        autocomplete="off"
+                        required
+                        id="pass"
+                        />
+                        <label for="pass">Password</label>
+                    </div><!--=========== Password ==============-->
+
+                    <input type="submit" value="Sign In" class = "sign-btn">
+                    <p class="pass__desc">Forgot you password or any login details?
+                        <a href="#">Get Help Here</a><!--=========== FORGOT LOGIN ==============-->
+                    </p>
+
+                </div>
+            </form>
+
+    <!-- ============================= SIGN UP SECTION ============================    -->
+
+    <form action="register.html" autocomplete="off"class="sign-up">
+                
+        <div class="logo__content">
+            <img src="./assets/images/hobielogo-icon.png" alt="" class="img-logo">
+            <h3 class="logo-text">
+                Hobie
+            </h3>
+        </div> <!--======== LOGO ENDS =========-->
+
+        <div class="heading">
+            <h2>Get Started !</h2>
+            <h6>Already Have an Account?</h6>
+            <a href="#" class="reg">Sign in</a>
+        </div> <!--============= HEADING ENDS ================-->
+        
+        <div class="actual-form">
+
+            <div class="input-wrap">
+                <input type="text"
+                class="input-field"
+                autocomplete="off"
+                required
+                id="user"
+                />
+                <label for="user">User</label>
+            </div> <!--=========== User ==============-->
+
+            <div class="input-wrap">
+                <input type="email"
+                class="input-field"
+                autocomplete="off"
+                required
+                id="email"
+                />
+                <label for="email">E-mail</label>
+            </div> <!--=========== Email ==============-->
+
+            <div class="input-wrap">
+                <input type="password"
+                minlength="4" 
+                class="input-field"
+                autocomplete="off"
+                required
+                id="pass"
+                />
+                <label for="pass">Password</label>
+            </div><!--=========== Password ==============-->
+
+            <div class="input-wrap">
+                <input type="password"
+                minlength="4" 
+                class="input-field"
+                autocomplete="off"
+                required
+                id="pass"
+                />
+                <label for="pass">Confirm Password</label>
+            </div><!--=========== Password ==============-->
+
+            <input type="submit" value="Sign Up" class = "sign-btn">
+            <p class="pass__desc">Signing Up, I Agree with <a href="">Terms and Conditions</a> and <a href="">Privacy & Policy</a>.
+            </p>
+
+        </div>
+    </form>
+
+        </div>
+
+    <!-- ============================= CAROUSEL SLIDER ============================    -->
+        
+    <div class="carousel">
+        <!-- ================== IMGS CONTENT ==================  -->
+        <div class="images-wrapper">
+            <img src="./assets/images/register/img_slider.png" alt="" class="image img-1 show">
+            <img src="./assets/images/hobielogo-icon.png" alt="" class="image img-2">
+            <img src="./assets/images/register/image3.png" alt="" class="image img-3">
+        </div>
+        
+        
+        <!-- ================== TEXT SLIDER ==================  -->
+
+        <div class="text-slider">
+            <div class="text-wrap">
+                <div class="text-group">
+                    <h2>Share your own art's</h2>
+                    <h2>Get freedom to create anything!</h2>
+                    <h2>Invite your friends to your Hobie</h2>
+                </div> 
+            </div>
+            
+            <div class="bullets">
+                <span class="active" data-value="1" id="radio1"></span>
+                <span data-value="2" id="radio2"></span>
+                <span data-value="3" id="radio3"></span>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+    
+</main>
+
+
+
+
+
+
+
+
+<!-- ===================== LINK JS =====================  -->
+
+<script src="./assets/Js/loginpage.js"></script>
+</body>
+</html>
